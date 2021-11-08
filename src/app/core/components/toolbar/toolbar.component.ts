@@ -4,11 +4,12 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-toolbar',
   templateUrl: 'toolbar.component.html',
   styles: [`:host {
-    background-color: #106cc8;
-    color: rgba(255, 255, 255, 0.87);
+    background-color: #4c4c4c;
+    color: rgba(255, 255, 255);
     display: block;
     height: 48px;
-    padding: 0 16px;
+    padding: 0 46px;
+    text-align: center;
   }
 
   h1 {

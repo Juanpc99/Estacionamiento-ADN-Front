@@ -3,7 +3,6 @@ import { Observable } from 'rxjs';
 
 import { Espacio } from '../../shared/model/espacio';
 import { EspacioService } from '../../shared/service/espacio.service';
-//import { ProductoService } from '../../shared/service/producto.service';
 
 @Component({
   selector: 'app-listar-producto',

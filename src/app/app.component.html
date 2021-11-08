@@ -1,5 +1,11 @@
 <app-toolbar></app-toolbar>
-<app-navbar [items]='companies'></app-navbar>
-<router-outlet></router-outlet>
+<div class="row container mt-4">
+    <div class="col-3">
+        <app-sidebar [items]="companies"></app-sidebar>
+    </div>
+    <div class="col">
+        <router-outlet></router-outlet>
+    </div>
+</div>
 
 

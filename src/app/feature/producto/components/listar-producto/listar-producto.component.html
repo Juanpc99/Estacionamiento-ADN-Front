@@ -3,15 +3,21 @@
   <div *ngFor="let item of listaEspacios | async"
         class = "col-md-2 col-sm-6">
     <div class="card">
-      <img 
-        src="assets/favicon/carro.jpg" 
+      <img *ngIf="item.estado == 'D' ; else noDisponible"
+        src="assets/espacios/espacio-disponible.jpg" 
         class="card-img-top"
         >
         <div class="card-body">
-          <p class="card-text">
+          <p class="card-text text-center">
             {{item.nombre}}
           </p>
         </div>
     </div>
   </div>
 </div>
+
+<ng-template #noDisponible>
+  <img src="assets/espacios/espacio-ocupado.jpg"
+        class="card-img-top"
+  >
+</ng-template>
